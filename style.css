@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+  font-family: "CookieRun-Regular";
+}
+@font-face {
+  font-family: "CookieRun-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  height: 300vh;
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  /* gap: 100px; */
+  background-color: #fff;
+}
+header ul li {
+  display: flex;
+  align-items: center;
+  cursor: default;
+  height: 100%;
+  padding: 0 50px;
+  transition: 0s;
+}
+.main_text {
+  cursor: default;
+
+  width: 100%;
+  height: 100vh;
+  font-family: "GongGothicMedium";
+  font-size: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+.con2 {
+  height: 200vh;
+  margin-top: 150px;
+  opacity: 0;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.Introduce_myself {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #aaa;
+}
+.Introduce_myself > img {
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 500px;
+}
+.me {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.me > h1 {
+  font-size: 50px;
+}
+.me > h3 {
+  font-size: 20px;
+}
+.self {
+  width: 500px;
+}
+.content:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content:nth-child(3) {
+  background-color: #aaa;
+}
+.gongback {
+  height: 10vh;
+}
+.github {
+  width: 500px;
+  background-color: #fff;
+  /* border: 5px solid #000; */
+  border-radius: 50%;
+}
