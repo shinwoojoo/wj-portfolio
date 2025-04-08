@@ -1,28 +1,24 @@
-let contents = document.querySelectorAll(".content");
 let btns = document.querySelector(".btns");
-let con2 = document.querySelector(".con2");
+let contents = document.querySelectorAll(".content");
 let btnsChildren = btns.children;
-con2.setAttribute("style", "opacity: 0; transform: translateY(50vh)");
-window.addEventListener("scroll", () => {
-  let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
-  let mainText = document.querySelector(".main_text");
-  let header = document.querySelector("header");
-  mainText.setAttribute("style", "opacity: 1;");
-  header.setAttribute("style", "opacity: 0;");
+const mainText = document.querySelector(".main_text");
+const con2 = document.querySelector(".con2");
+const header = document.querySelector("header");
 
-  if (scrollLocation >= 10 && mainText.getAttribute("style") == "opacity: 1;") {
-    mainText.setAttribute("style", "opacity: 0; transform: translateY(-50vh);");
-    con2.setAttribute("style", "opacity: 1;");
+window.addEventListener("scroll", () => {
+  const scrollLocation = document.documentElement.scrollTop;
+
+  if (scrollLocation >= 10) {
+    mainText.classList.add("hidden");
+    con2.classList.add("visible");
+    header.classList.add("visible");
   } else {
-    mainText.setAttribute("style", "opacity: 1;");
-    con2.setAttribute("style", "opacity: 0; transform: translateY(50vh)");
-  }
-  if (scrollLocation >= 10 && header.getAttribute("style") == "opacity: 0;") {
-    header.setAttribute("style", "opacity: 1;");
-  } else {
-    header.setAttribute("style", "opacity: 0;");
+    mainText.classList.remove("hidden");
+    con2.classList.remove("visible");
+    header.classList.remove("visible");
   }
 });
+
 window.scrollTo({ top: 0 });
 // window.scrollTop = 0;
 
@@ -34,7 +30,7 @@ btns.addEventListener("click", (e) => {
   if (e.target != e.currentTarget) {
     console.log([...btns.children].indexOf(e.target));
     window.scrollTo({
-      top: contents[[...btns.children].indexOf(e.target)].offsetTop - 50,
+      top: contents[[...btns.children].indexOf(e.target)].offsetTop + 100,
       left: 100,
       behavior: "smooth",
     });

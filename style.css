@@ -82,17 +82,25 @@ header ul li {
 }
 .Introduce_myself {
   display: flex;
-  gap: 50px;
+  gap: 90px;
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background-color: #aaa;
+  background-color: #ccc;
 }
-.Introduce_myself > img {
+.Introduce_myself .img-con {
   border: 5px solid black;
   border-radius: 20px;
-  width: 500px;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
+.profile-img {
+  height: 100%;
+}
+
 .me {
   display: flex;
   flex-direction: column;
@@ -104,23 +112,83 @@ header ul li {
 .me > h3 {
   font-size: 20px;
 }
-.self {
-  width: 500px;
+.education {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 10px;
+  margin: 30px 0;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.moment {
+  display: inline-block;
+  width: 120px;
+  margin-right: 10px;
 }
 .content:nth-child(2) {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
+.icon-con {
+  display: flex;
+  gap: 10px;
+}
+.icon > svg {
+  width: 100px;
+  height: 100px;
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 .content:nth-child(3) {
-  background-color: #aaa;
+  background-color: #ccc;
 }
 .gongback {
   height: 10vh;
 }
 .github {
   width: 500px;
+  height: 500px;
   background-color: #fff;
-  /* border: 5px solid #000; */
   border-radius: 50%;
+}
+
+/* js */
+
+.main_text {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease;
+}
+.main_text.hidden {
+  opacity: 0;
+  transform: translateY(-50vh);
+}
+
+.con2 {
+  opacity: 0;
+  transform: translateY(50vh);
+  transition: all 0.5s ease;
+}
+.con2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+header.visible {
+  opacity: 1;
 }
