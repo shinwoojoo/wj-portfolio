@@ -61,3 +61,4 @@ const observer = new IntersectionObserver(
 contents.forEach((el) => {
   observer.observe(el);
 });
+console.log(document.querySelector(".swiper"));

@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pp</title>
+    <title>SHINWOOJOO</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <script src="./script.js" defer></script>
   </head>
   <body>
@@ -13,9 +17,9 @@
         <nav>
           <ul class="btns">
             <li>자기소개</li>
-            <li>기술 스택</li>
-            <li>개발한것들</li>
-            <li>마치며</li>
+            <li>수상내역</li>
+            <li>프로젝트</li>
+            <!-- <li>마치며</li> -->
           </ul>
         </nav>
       </header>
@@ -26,8 +30,14 @@
             <div class="img-con">
               <img src="./img/bkimg.png" alt="img" class="profile-img" />
             </div>
-            <h1>신우주 <br />SHINWOOJOO</h1>
-            <h3>#2007_09_03 #010_8637_5629</h3>
+            <h1>
+              신우주 <br />
+              SHINWOOJOO
+            </h1>
+            <h3>
+              #woojooniziki@gmail.com <br />
+              #010_8637_5629
+            </h3>
           </div>
           <div class="moment-con">
             <div class="education">
@@ -37,27 +47,23 @@
                 <b>서울 오산중학교 졸업</b>
               </li>
               <li>
-                <span class="moment">2020 ~ </span>
+                <span class="moment">2023 ~ </span>
                 <b>서울디지텍고등학교 재학중</b>
               </li>
             </div>
             <div class="education">
-              <h3>수상내역</h3>
+              <h3>자격증</h3>
               <li>
-                <span class="moment">2023.12.28</span>
-                <b>교내 웹앱경진대회 우수상</b>
+                <span class="moment">2023.6.10</span>
+                <b>ITQ 엑셀</b>
               </li>
               <li>
-                <span class="moment">2024.07.19</span>
-                <b>교내 해커톤 우수상</b>
+                <span class="moment">2023.09.13</span>
+                <b>지도제작기능사</b>
               </li>
               <li>
-                <span class="moment">2024.11.19</span>
-                <b>서울시 공간정보활용 공모전 서울특별시장상</b>
-              </li>
-              <li>
-                <span class="moment">2024.12.19</span>
-                <b>교내 웹앱경진대회 최우수상</b>
+                <span class="moment">2024.12.11</span>
+                <b>공간정보융합기능사</b>
               </li>
             </div>
             <h3>기술 스택</h3>
@@ -348,54 +354,145 @@
             </div>
           </div>
         </div>
-        <div class="content">
-          <ul class="icon-con"></ul>
+        <div class="content content-awards">
+          <h2>🏆 수상내역 🏆</h2>
+
+          <div class="awards">
+            <div class="award-card blue">
+              <div class="date">2023.12.28</div>
+              <div class="desc">교내 웹앱경진대회 우수상</div>
+            </div>
+            <div class="award-card green">
+              <div class="date">2024.07.19</div>
+              <div class="desc">교내 해커톤 우수상</div>
+            </div>
+            <div class="award-card orange">
+              <div class="date">2024.11.19</div>
+              <div class="desc">
+                서울시 공간정보활용 공모전<br />서울특별시장상
+              </div>
+            </div>
+            <div class="award-card red">
+              <div class="date">2024.12.19</div>
+              <div class="desc">교내 웹앱경진대회 최우수상</div>
+            </div>
+          </div>
         </div>
-        <div class="content">
+        <div class="content content-project">
+          <h2>💼 프로젝트 모음 💼</h2>
+
+          <div class="projects">
+            <div class="project-card">
+              <div class="logo-img logo-img1"></div>
+
+              <div class="project-content">
+                <div class="project-title">MET.GG</div>
+                <div class="project-desc">
+                  롤 전적검색 및 근처 pc방 찾기, 파티 찾기 등을<br />
+                  할 수 있는 사이트
+                </div>
+                <div class="tags">#React #Firebase #API</div>
+                <div class="tags">교내 웹앱경진대회 우수상</div>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/shinwoojoo/MET.GG-WEB-Completed"
+                    target="_blank"
+                    >🔗 GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="logo-img logo-img2"></div>
+
+              <div class="project-content">
+                <div class="project-title">Lost and Found</div>
+                <div class="project-desc">
+                  학교에서 나온 분실물을 등록하여 <br />
+                  주인을 찾을 수 있는 사이트
+                </div>
+                <div class="tags">#JavaScript #React #Express</div>
+                <div class="tags">교내 해커톤 우수상</div>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/shinwoojoo/2024-07-hackathon"
+                    target="_blank"
+                    >🔗 GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="logo-img logo-img3"></div>
+
+              <div class="project-content">
+                <div class="project-title">CLEANTECH</div>
+                <div class="project-desc">
+                  선생님이 주번 순서를 쉽게 확인하고
+                  <br />편안하게 청소검사를 하실 수 있는 사이트
+                </div>
+                <div class="tags">#JavaScript #React #Nest.js</div>
+                <div class="tags">교내 웹앱경진대회 최우수상</div>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/shinwoojoo/cleanTech_front"
+                    target="_blank"
+                    >🔗 GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
           <a href="https://github.com/shinwoojoo" target="_blank">
-            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-            <svg
-              class="github"
-              width="800px"
-              height="800px"
-              viewBox="0 0 20 20"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <title>github [#142]</title>
-              <desc>Created with Sketch.</desc>
-              <defs></defs>
-              <g
-                id="Page-1"
-                stroke="none"
-                stroke-width="1"
-                fill="none"
-                fill-rule="evenodd"
+            <div class="gotoGithub">
+              <svg
+                class="github"
+                width="800px"
+                height="800px"
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
               >
+                <title>github [#142]</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
                 <g
-                  id="Dribbble-Light-Preview"
-                  transform="translate(-140.000000, -7559.000000)"
-                  fill="#000000"
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
                 >
-                  <g id="icons" transform="translate(56.000000, 160.000000)">
-                    <path
-                      d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
-                      id="github-[#142]"
-                    ></path>
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-140.000000, -7559.000000)"
+                    fill="#000000"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                        id="github-[#142]"
+                      ></path>
+                    </g>
                   </g>
                 </g>
-              </g>
-            </svg>
+              </svg>
+              바로가기
+            </div>
           </a>
         </div>
-        <div class="content">
+        <!-- <div class="content">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sed
           alias totam in recusandae eum, ea cum? Dolorem expedita dolorum, non
           vel corrupti reprehenderit accusamus illum consequatur enim ducimus.
           Et.
-        </div>
+        </div> -->
         <div class="gongback"></div>
       </div>
     </div>
