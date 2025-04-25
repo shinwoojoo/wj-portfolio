@@ -20,8 +20,6 @@ window.addEventListener("scroll", () => {
 });
 
 window.scrollTo({ top: 0 });
-// window.scrollTop = 0;
-
 btns.addEventListener("click", (e) => {
   console.log(
     contents[[...btns.children].indexOf(e.target)].offsetTop,
@@ -52,7 +50,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.7, // 90% 이상 보이면 감지
+    threshold: 0.7, // 70% 이상 보이면 감지
   }
 );
 
