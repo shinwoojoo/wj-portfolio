@@ -23,7 +23,7 @@
   font-style: normal;
 }
 .container {
-  height: 300vh;
+  height: 330vh;
   overflow: hidden;
 }
 header {
@@ -264,6 +264,8 @@ h3 {
   background: #fff;
   margin: 0;
   padding: 40px 20px;
+  gap: 20px;
+  height: 120vh;
   text-align: center;
 }
 
@@ -302,6 +304,7 @@ h2 {
 
 .project-content {
   padding: 16px;
+  width: 300px;
 }
 
 .project-title {
@@ -320,6 +323,9 @@ h2 {
   font-size: 13px;
   color: #888;
   margin-bottom: 12px;
+}
+.link {
+  color: #007bff;
 }
 
 .project-links a {
@@ -347,6 +353,13 @@ h2 {
 }
 .logo-img3 {
   background-image: url(./img/CLEANTECH.png);
+}
+.logo-img4 {
+  background-image: url(./img/todolist.png);
+}
+.logo-img5 {
+  background-color: #000;
+  background-image: url(./img/gaonLogo.png);
 }
 
 /* js */
