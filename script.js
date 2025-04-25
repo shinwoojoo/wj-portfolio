@@ -52,7 +52,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.9, // 90% 이상 보이면 감지
+    threshold: 0.7, // 90% 이상 보이면 감지
   }
 );
 
